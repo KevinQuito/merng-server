@@ -1,0 +1,4 @@
+# we need to remove the node modules, so it doesn't track that, as well as the config.js, so that when we push this to a github repository, we won't
+# actually push the config.js since that's sensitive data
+node_modules
+config.js
