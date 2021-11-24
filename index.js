@@ -15,7 +15,7 @@ const { MONGODB } = require('./config.js');
 
 const pubsub = new PubSub(); // we can just pass in pubSub in our context now, so we can use it in our resolvers
 
-const PORT = process.env.port || 5000;
+const PORT = process.env.PORT || 5000;
 // const typeDefs = gql`
 //     type Post{
 //         id: ID!
