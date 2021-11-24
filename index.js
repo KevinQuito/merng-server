@@ -63,7 +63,8 @@ mongoose.connect(MONGODB, { useNewUrlParser: true})
     .then(res => {
         // server.listen returns a promise so we need a .then
         console.log(`Server running at ${res.url}`);// inject a variable using ${}, the res.url will log it to the console, so we can ctrl + click and open our server
-    })// need to catch an error if it happens because an error can crash the server and the app wouldn't run at all
+    })
     .catch(err => {
+        // need to catch an error if it happens because an error can crash the server and the app wouldn't run at all
         console.log(err)
     })
